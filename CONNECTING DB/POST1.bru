@@ -1,0 +1,23 @@
+meta {
+  name: POST1
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://localhost:3010/api/users
+  body: json
+  auth: none
+}
+
+headers {
+  Content-Type: application/json
+}
+
+body:json {
+  {
+    "name": "vignesh",
+    "email":"vignesh1@gmail.com",
+    "password":"vignesh321"
+  }
+}
